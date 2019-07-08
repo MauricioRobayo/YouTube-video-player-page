@@ -4,20 +4,39 @@ body {
 }
 
 .youtube-navbar {
- 
   height: 56px;
   border-bottom: 6px solid #fbfbfb;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#youtube-home-icon{
+#youtube-home-icon {
   width: 60px;
   height: 45px;
-
 }
-#nav-bar{
-  display:"flex";
+#nav-bar {
+  display: 'flex';
   align-content: center;
 }
-
-
+.left-nav,
+.center-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+#nav-bar input {
+  font-size: 1.25rem;
+  padding: 6px;
+}
+#menuToggle {
+  padding-left: 28px;
+  padding-right: 28px;
+  align-items: center;
+}
+.burger {
+  width: 25px;
+  height: 3px;
+  background-color: gray;
+  margin: 3px 0;
+}
