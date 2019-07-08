@@ -38,3 +38,13 @@ body {
   background-color: gray;
   margin: 3px 0;
 }
+.style-scope{
+  width: 30px;
+  height: 30px;
+  color: grey;
+  padding: 6px;
+}
+.flex-space-around{
+  display: flex;
+  align-items: space-around;
+}
