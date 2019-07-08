@@ -46,7 +46,8 @@ body {
 }
 .flex-space-around {
   display: flex;
-  align-items: space-around;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-video {
