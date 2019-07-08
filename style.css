@@ -38,13 +38,40 @@ body {
   background-color: gray;
   margin: 3px 0;
 }
-.style-scope{
+.style-scope {
   width: 30px;
   height: 30px;
   color: grey;
   padding: 6px;
 }
-.flex-space-around{
+.flex-space-around {
   display: flex;
   align-items: space-around;
+}
+
+.main-video {
+  grid-area: main-video;
+}
+.related-videos {
+  grid-area: related-videos;
+}
+.video-information {
+  grid-area: video-information;
+}
+.comments {
+  grid-area: comments;
+}
+.related-videos-title {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'main-video related-videos'
+    'video-information related-videos'
+    'comments related-videos';
 }
