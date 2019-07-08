@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <title>Youtube</title>
 </head>
 
 <body>
   <nav class="youtube-navbar">
     <div class="left-nav">
-      <div id="menuToggle">
-        <div class="burger"></div>
-        <div class="burger"></div>
-        <div class="burger"></div>
+      <div id="menuToggle" class="icon">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+          style="pointer-events: none; display: block; width: 100%; height: 100%;">
+          <g class="style-scope yt-icon">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+          </g>
+        </svg>
       </div>
       <div id="youtube-home-icon">
         <svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false"
@@ -82,8 +86,8 @@
       </div>
     </div>
     <div class="right-nav">
-      <yt-icon class="style-scope ytd-topbar-menu-button-renderer"><svg viewBox="0 0 24 24"
-          preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+      <div class="icon">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
           style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <g class="style-scope yt-icon">
             <path
@@ -91,10 +95,10 @@
               class="style-scope yt-icon"></path>
           </g>
         </svg>
-      </yt-icon>
+      </div>
 
-      <yt-icon-button id="button" class="style-scope ytd-topbar-menu-button-renderer style-default"><svg
-          viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+      <div class="icon">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
           style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <g class="style-scope yt-icon">
             <path
@@ -102,12 +106,10 @@
               class="style-scope yt-icon"></path>
           </g>
         </svg>
+      </div>
 
-
-        </yt-icon></button></yt-icon-button>
-
-      <yt-icon class="style-scope ytd-notification-topbar-button-renderer"><svg viewBox="0 0 24 24"
-          preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+      <div class="icon">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
           style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <g class="style-scope yt-icon">
             <path
@@ -115,12 +117,10 @@
               class="style-scope yt-icon"></path>
           </g>
         </svg>
+      </div>
 
-
-      </yt-icon>
-
-      <yt-icon class="style-scope ytd-notification-topbar-button-renderer"><svg viewBox="0 0 24 24"
-          preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+      <div class="icon">
+        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
           style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <g class="style-scope yt-icon">
             <path
@@ -128,9 +128,7 @@
               class="style-scope yt-icon"></path>
           </g>
         </svg>
-
-
-      </yt-icon>
+      </div>
 
       <img id="img" class="style-scope yt-img-shadow" alt="" height="32" width="32"
         src="https://yt3.ggpht.com/-7M3nMArVaFo/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rf77HEsaHPHTWi03bo9jCAT9IwLSg/s88-mo-c-c0xffffffff-rj-k-no/photo.jpg">
@@ -154,57 +152,76 @@
 
 
     <div class="video-information">
-      <h1>Contributing to Open Source Part I: The Easy Way</h1>
-      <div class="flex-space-around">
-        <div class="">49,435 views</div>
-        
-          <div id="button" class="style-scope " aria-label="like this video along with 594 other people">
-            <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24"
-                preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-                style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                <g class="style-scope yt-icon">
-                  <path
-                    d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
-                    class="style-scope yt-icon"></path>
-                </g>
-              </svg>
-
-
-            </yt-icon>
+      <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+      <div id="video-meta-information" class="flex-space-around">
+        <div class="left-elements">49,435 views</div>
+        <div class="right-elements">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; width: 100%; height: 100%;">
+              <g class="style-scope yt-icon">
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
           </div>
-
-
-          <div id="button" class="style-scope " aria-label="dislike this video along with 75 other people">
-            <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24"
-                preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-                style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                <g class="style-scope yt-icon">
-                  <path
-                    d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
-                    class="style-scope yt-icon"></path>
-                </g>
-              </svg>
-
-
-            </yt-icon>
+          <span>355</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; width: 100%; height: 100%;">
+              <g class="style-scope yt-icon">
+                <path
+                  d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
           </div>
-          <div>
-              <yt-formatted-string id="text" class="style-scope ytd-button-renderer style-default ">Share</yt-formatted-string>
+          <span>45</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; width: 100%; height: 100%;">
+              <g class="style-scope yt-icon">
+                <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" class="style-scope yt-icon"></path>
+              </g>
+            </svg>
           </div>
-          <div>
-              <svg  viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
-                  <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
-                </g></svg>
-              
-              
-            </yt-icon><paper-ripple class="style-scope yt-icon-button circle"><!--css-build:shady-->
-          
+          <span>Share</span>
+          <div class="icon">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 100%; height: 100%;">
+              <g class="style-scope yt-icon">
+                <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
           </div>
-
+          <span>Save</span>
         </div>
       </div>
-    
+    </div>
 
+    <div class="video-description">
+      <div class="video-thumb">
+        <img width="48"
+          src="https://yt3.ggpht.com/a/AGF-l79PHE32UB5d2fnmwsiJXu3vv_fnC_SNO899VQ=s48-mo-c-c0xffffffff-rj-k-no">
+      </div>
+      <div class="description">
+        <div class="author-info flex-space-around">
+          <div class="publication-info">
+            <p>The Odin Project</p>
+            <p>Published on Feb 27, 2014</p>
+          </div>
+          <button id="subscribe">Subscribe</button>
+        </div>
+        <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple
+          contribution to an open source project -- without using the command line, a text editor, "forking a repo", or
+          even touching Git outside of Github. I'll also describe what kinds of contributions open source software
+          projects are typically looking for. As an example, I use submitting a student solution to a web development
+          exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You
+          can find more information about that project at http://theodinproject.com.</p>
+      </div>
+    </div>
 
     <div class="comments">
       <h1>Comments</h1>
