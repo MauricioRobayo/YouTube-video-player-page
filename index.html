@@ -79,9 +79,17 @@
     </div>
     <div class="center-nav">
       <div id="nav-bar">
-        <form action="">
+        <form id="search-form" action="">
           <input id="youtube-search" size="45" type="text" placeholder="Search" />
-          <input type="Submit" value="Submit" />
+          <button title="Search" id="search-button" class="icon" type="button"><svg viewBox="0 0 24 24"
+              preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 100%; height: 100%;">
+              <g class="style-scope yt-icon">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg></button>
         </form>
       </div>
     </div>
@@ -137,102 +145,118 @@
   </nav>
   <main>
     <div>
-    <div class="main-video">
-      <iframe id="main-video" src="https://www.youtube.com/embed/ZnuwB35GYMY" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="main-video">
+        <iframe id="main-video" src="https://www.youtube.com/embed/ZnuwB35GYMY"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="video-information">
+        <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
+        <div id="video-meta-information" class="flex-space-around">
+          <div class="left-elements">49,435 views</div>
+          <div class="right-elements">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                  <path
+                    d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                    class="style-scope yt-icon"></path>
+                </g>
+              </svg>
+            </div>
+            <span>355</span>
+            <div class="icon">
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                  <path
+                    d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                    class="style-scope yt-icon"></path>
+                </g>
+              </svg>
+            </div>
+            <span>45</span>
+            <div class="icon">
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                  <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" class="style-scope yt-icon"></path>
+                </g>
+              </svg>
+            </div>
+            <span>Share</span>
+            <div class="icon">
+              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                  <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                    class="style-scope yt-icon"></path>
+                </g>
+              </svg>
+            </div>
+            <span>Save</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-description">
+        <div class="video-thumb">
+          <img width="48" alt="How to embed a youtube video"
+            src="https://yt3.ggpht.com/a/AGF-l79PHE32UB5d2fnmwsiJXu3vv_fnC_SNO899VQ=s48-mo-c-c0xffffffff-rj-k-no">
+        </div>
+        <div class="description">
+          <div class="author-info flex-space-around">
+            <div class="publication-info">
+              <p>The Odin Project</p>
+              <p>Published on Feb 27, 2014</p>
+            </div>
+            <button id="subscribe">Subscribe</button>
+          </div>
+          <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple
+            contribution to an open source project -- without using the command line, a text editor, "forking a repo",
+            or
+            even touching Git outside of Github. I'll also describe what kinds of contributions open source software
+            projects are typically looking for. As an example, I use submitting a student solution to a web development
+            exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.
+            You
+            can find more information about that project at http://theodinproject.com.</p>
+        </div>
+      </div>
+
+      <div class="comments">
+        <h1>Comments</h1>
+      </div>
     </div>
 
-    <div class="video-information">
-      <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
-      <div id="video-meta-information" class="flex-space-around">
-        <div class="left-elements">49,435 views</div>
-        <div class="right-elements">
-          <div class="icon">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-              style="pointer-events: none; width: 100%; height: 100%;">
-              <g class="style-scope yt-icon">
-                <path
-                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
-                  class="style-scope yt-icon"></path>
-              </g>
-            </svg>
+    <div class="related-videos">
+      <div class="related-videos-title">
+        <div>Up next</div>
+        <div class="flex-space-around">
+          <div class="autoplay">AUTOPLAY</div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="related-videos-thumbs">
+        <div class="related-video">
+          <div class="related-video-thumbnail">
+            <img alt="How to insert image into another image"
+              src="https://i.ytimg.com/an_webp/Y4pzMHe_gp0/mqdefault_6s.webp?du=3000&sqp=CKC-kukF&rs=AOn4CLDP6_RgwhHdqyHYz0cel3tCdIBCpQ">
           </div>
-          <span>355</span>
-          <div class="icon">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-              style="pointer-events: none; width: 100%; height: 100%;">
-              <g class="style-scope yt-icon">
-                <path
-                  d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
-                  class="style-scope yt-icon"></path>
-              </g>
-            </svg>
+          <div class="related-video-description">
+            <div class="related-video-title">How to insert image into another image</div>
+            <div class="related-video-metainfomation">Recipes</div>
+            <div class="related-video-metainfomation">4.4M views</div>
           </div>
-          <span>45</span>
-          <div class="icon">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-              style="pointer-events: none; width: 100%; height: 100%;">
-              <g class="style-scope yt-icon">
-                <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" class="style-scope yt-icon"></path>
-              </g>
-            </svg>
-          </div>
-          <span>Share</span>
-          <div class="icon">
-            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
-              style="pointer-events: none; display: block; width: 100%; height: 100%;">
-              <g class="style-scope yt-icon">
-                <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
-                  class="style-scope yt-icon"></path>
-              </g>
-            </svg>
-          </div>
-          <span>Save</span>
         </div>
       </div>
     </div>
-
-    <div class="video-description">
-      <div class="video-thumb">
-        <img width="48" alt="How to embed a youtube video"
-          src="https://yt3.ggpht.com/a/AGF-l79PHE32UB5d2fnmwsiJXu3vv_fnC_SNO899VQ=s48-mo-c-c0xffffffff-rj-k-no">
-      </div>
-      <div class="description">
-        <div class="author-info flex-space-around">
-          <div class="publication-info">
-            <p>The Odin Project</p>
-            <p>Published on Feb 27, 2014</p>
-          </div>
-          <button id="subscribe">Subscribe</button>
-        </div>
-        <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple
-          contribution to an open source project -- without using the command line, a text editor, "forking a repo", or
-          even touching Git outside of Github. I'll also describe what kinds of contributions open source software
-          projects are typically looking for. As an example, I use submitting a student solution to a web development
-          exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You
-          can find more information about that project at http://theodinproject.com.</p>
-      </div>
     </div>
-
-    <div class="comments">
-      <h1>Comments</h1>
-    </div>
-  </div>
-  
-  <div class="related-videos">
-    <div class="related-videos-title">
-      <div>Up next</div>
-      <div class="flex-space-around">
-        <div class="autoplay">AUTOPLAY</div>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
-      </div>
-      </div>
   </main>
-  
+
 </body>
 
 </html>

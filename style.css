@@ -10,6 +10,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+#youtube-search {
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+}
 #video-title {
   font-size: 22px;
 }
@@ -46,6 +50,22 @@ body {
   fill: grey;
   padding: 6px;
 }
+#search-form {
+  display: flex;
+  align-items: center;
+}
+#search-button {
+  margin: 0;
+  height: 37px;
+  width: 70px;
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+}
+#search-button:hover {
+  background-color: #d3d3d3;
+}
 .flex-space-around {
   display: flex;
   justify-content: space-between;
@@ -62,10 +82,10 @@ body {
 .main-video {
   grid-area: main-video;
   position: relative;
-  padding-top: 56.25%; 
+  padding-top: 56.25%;
   overflow: hidden;
 }
-#main-video{
+#main-video {
   border-style: none;
   box-sizing: border-box;
   position: absolute;
@@ -91,6 +111,26 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+}
+.related-video {
+  display: flex;
+}
+.related-video-thumbnail {
+  padding-right: 8px;
+}
+.related-video-thumbnail img {
+  width: 168px;
+  height: 94px;
+}
+.related-video-description div {
+  padding-bottom: 6px;
+}
+.related-video-title {
+  font-weight: 400;
+}
+.related-video-metainfomation {
+  font-size: 14px;
+  color: gray;
 }
 main {
   padding: 40px;
