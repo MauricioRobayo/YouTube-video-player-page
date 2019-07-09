@@ -61,6 +61,18 @@ body {
 }
 .main-video {
   grid-area: main-video;
+  position: relative;
+  padding-top: 56.25%; 
+  overflow: hidden;
+}
+#main-video{
+  border-style: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .related-videos {
   grid-area: related-videos;
