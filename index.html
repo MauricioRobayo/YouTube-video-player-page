@@ -136,27 +136,11 @@
     </div>
   </nav>
   <main>
-
+    <div>
     <div class="main-video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZnuwB35GYMY" frameborder="0"
+      <iframe id="main-video" src="https://www.youtube.com/embed/ZnuwB35GYMY" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
-
-    <div class="related-videos">
-      <div class="related-videos-title">
-        <div>Up next</div>
-        <div>
-        <div>AUTOPLAY</div>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
-
-      </div>
-    </div>
-
 
     <div class="video-information">
       <h1 id="video-title">Contributing to Open Source Part I: The Easy Way</h1>
@@ -210,7 +194,7 @@
 
     <div class="video-description">
       <div class="video-thumb">
-        <img width="48"
+        <img width="48" alt="How to embed a youtube video"
           src="https://yt3.ggpht.com/a/AGF-l79PHE32UB5d2fnmwsiJXu3vv_fnC_SNO899VQ=s48-mo-c-c0xffffffff-rj-k-no">
       </div>
       <div class="description">
@@ -233,8 +217,22 @@
     <div class="comments">
       <h1>Comments</h1>
     </div>
-
+  </div>
+  
+  <div class="related-videos">
+    <div class="related-videos-title">
+      <div>Up next</div>
+      <div class="flex-space-around">
+        <div class="autoplay">AUTOPLAY</div>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      </div>
+      </div>
   </main>
+  
 </body>
 
 </html>
