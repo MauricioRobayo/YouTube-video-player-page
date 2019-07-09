@@ -62,10 +62,10 @@ body {
 .main-video {
   grid-area: main-video;
   position: relative;
-  padding-top: 56.25%; 
+  padding-top: 56.25%;
   overflow: hidden;
 }
-#main-video{
+#main-video {
   border-style: none;
   box-sizing: border-box;
   position: absolute;
@@ -91,6 +91,26 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+}
+.related-video {
+  display: flex;
+}
+.related-video-thumbnail {
+  padding-right: 8px;
+}
+.related-video-thumbnail img {
+  width: 168px;
+  height: 94px;
+}
+.related-video-description div {
+  padding-bottom: 6px;
+}
+.related-video-title {
+  font-weight: 400;
+}
+.related-video-metainfomation {
+  font-size: 14px;
+  color: gray;
 }
 main {
   padding: 40px;
